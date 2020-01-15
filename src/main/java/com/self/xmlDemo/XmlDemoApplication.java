@@ -31,6 +31,10 @@ public class XmlDemoApplication {
 		System.out.println(cricketCoach.getTeamName());
 		System.out.println(cricketCoach.getEmailAddress());
 
+		//Retrieve values set with external property file
+		FieldCoach fieldCoach = context.getBean("myCoach2",FieldCoach.class);
+		System.out.println(fieldCoach.getTeamName());
+		System.out.println(fieldCoach.getEmailAddress());
 
 		//Close context
 		context.close();

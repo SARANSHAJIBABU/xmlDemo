@@ -2,6 +2,8 @@ package com.self.xmlDemo;
 
 public class FieldCoach implements Coach{
     private FortuneService fortuneService;
+    private String emailAddress;
+    private String teamName;
 
     public FieldCoach() {
     }
@@ -22,5 +24,21 @@ public class FieldCoach implements Coach{
 
     public void setFortuneService(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
     }
 }
