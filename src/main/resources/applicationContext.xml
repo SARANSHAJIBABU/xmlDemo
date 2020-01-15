@@ -6,4 +6,7 @@
     <bean id="myCoach" class="com.self.xmlDemo.CricketCoach">
         <constructor-arg ref="myFortune"/>
     </bean>
+    <bean id="myCoach2" class="com.self.xmlDemo.FieldCoach">
+        <property name="fortuneService" ref="myFortune"/>
+    </bean>
 </beans>
