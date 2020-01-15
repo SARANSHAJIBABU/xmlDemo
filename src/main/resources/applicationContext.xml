@@ -5,6 +5,8 @@
     <bean id="myFortune" class="com.self.xmlDemo.HappyFortuneService"/>
     <bean id="myCoach" class="com.self.xmlDemo.CricketCoach">
         <constructor-arg ref="myFortune"/>
+        <property name="emailAddress" value="cricketcoach@abcd.com"/>
+        <property name="teamName" value="Singapore Warriors"/>
     </bean>
     <bean id="myCoach2" class="com.self.xmlDemo.FieldCoach">
         <property name="fortuneService" ref="myFortune"/>

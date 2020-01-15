@@ -26,6 +26,12 @@ public class XmlDemoApplication {
 		System.out.println(coach2.getTodaysWorkout());
 		System.out.println(coach2.getDailyFortune());
 
+		//Retrieve bean values set with property injection from container
+		CricketCoach cricketCoach = context.getBean("myCoach",CricketCoach.class);
+		System.out.println(cricketCoach.getTeamName());
+		System.out.println(cricketCoach.getEmailAddress());
+
+
 		//Close context
 		context.close();
 		//SpringApplication.run(XmlDemoApplication.class, args);

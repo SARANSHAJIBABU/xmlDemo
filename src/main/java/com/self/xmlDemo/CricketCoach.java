@@ -2,6 +2,8 @@ package com.self.xmlDemo;
 
 public class CricketCoach implements Coach{
     private FortuneService fortuneService;
+    private String emailAddress;
+    private String teamName;
 
     public CricketCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
@@ -15,5 +17,21 @@ public class CricketCoach implements Coach{
     @Override
     public String getDailyFortune() {
         return fortuneService.getFortune();
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
     }
 }
